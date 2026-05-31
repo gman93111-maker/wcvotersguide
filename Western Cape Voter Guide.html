@@ -704,7 +704,7 @@ footer{text-align:center;padding:14px 16px;border-top:1px solid rgba(212,168,67,
   <span id="ft-4">Stem verantwoordelik / Vote responsibly. 🇿🇦</span>
   <br/><span id="contact" style="font-size:10px;color:#D4A843;margin-top:6px;display:inline-block;">💡 Need a custom tool built? Contact G-man: <a href="mailto:gman93111@gmail.com?subject=Custom%20Build%20Tool" style="color:#D4A843;">gman93111@gmail.com</a></span>
   <br/><span id="copyright" style="font-size:10px;color:#556677;margin-top:6px;display:inline-block;">© 2026 G-man. All rights reserved. Unauthorised copying or redistribution without credit is prohibited.</span>
-  <br/><span style="font-size:9px;color:#334455;margin-top:4px;display:inline-block;">v2.3 — June 2026</span>
+  <br/><span style="font-size:9px;color:#334455;margin-top:4px;display:inline-block;">v2.4 — June 2026</span>
   <br/>
   <svg width="36" height="36" viewBox="0 0 110 110" style="margin-top:10px;opacity:0.55;">
     <circle cx="55" cy="55" r="50" fill="none" stroke="#D4A843" stroke-width="1.5"/>
@@ -840,7 +840,7 @@ function setLang(l){
   document.getElementById('r-h2').textContent=en?'Score Breakdown per Question':'Telling per Vraag';
   document.getElementById('ns-msg').textContent=en?'No scores yet. Go back and score the parties first!':'Geen tellings nog nie. Gaan terug en beoordeel die partye eers!';
   document.getElementById('s-tit').textContent=en?'Share This Guide':'Deel Hierdie Gids';
-  document.getElementById('s-desc').textContent=en?'Share the live link with anyone — they tap and it opens instantly. No download needed. 🔗 https://wcvotersguide.netlify.app':'Deel die skakel met enigiemand — hulle tik en dit maak oop. Geen aflaai nodig. 🔗 https://wcvotersguide.netlify.app';
+  document.getElementById('s-desc').textContent=en?'Share the live link with anyone — they tap and it opens instantly. No download needed. 🔗 https://gman93111-maker.github.io/wcvotersguide/Western%20Cape%20Voter%20Guide.html':'Deel die skakel met enigiemand — hulle tik en dit maak oop. Geen aflaai nodig. 🔗 https://gman93111-maker.github.io/wcvotersguide/Western%20Cape%20Voter%20Guide.html';
   document.getElementById('s-wa').textContent=en?'Share via WhatsApp':'Deel via WhatsApp';
   document.getElementById('s-copy').textContent=en?'Copy Message':'Kopieer Boodskap';
   document.getElementById('s-dl').textContent=en?'Download File':'Laai Lêer Af';
@@ -969,7 +969,7 @@ function resetAll(){
 // ── Share ────────────────────────────────────────────────────────────────
 function doDL(){try{var src=document.documentElement.outerHTML;var blob=new Blob([src],{type:'text/html'});var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download='Western Cape Voter Guide.html';document.body.appendChild(a);a.click();document.body.removeChild(a);setTimeout(function(){URL.revokeObjectURL(url);},3000);}catch(e){alert('Download failed. Use Save Page As from your browser menu.');}}
 function doWA(){
-  var url='https://wcvotersguide.netlify.app';
+  var url='https://gman93111-maker.github.io/wcvotersguide/Western%20Cape%20Voter%20Guide.html';
   var msg='\uD83D\uDDF3\uFE0F Western Cape Voter Guide \u2014 Score parties on 10 key issues before you vote!\n'
     + '\uD83D\uDDF3\uFE0F Wes-Kaap Kiesersgids \u2014 Beoordeel partye op 10 sleutelvrae voor jy stem!\n'
     + '\uD83D\uDDF3\uFE0F Isilawuli Sabavoti WeNtshona Koloni \u2014 Nikeza amaqela amaphuzu kwimiba eyi-10 ngaphambi kokuvota!\n\n'
@@ -977,7 +977,7 @@ function doWA(){
   window.open('https://wa.me/?text='+encodeURIComponent(msg),'_blank');
 }
 function doCopy(){
-  var url='https://wcvotersguide.netlify.app';
+  var url='https://gman93111-maker.github.io/wcvotersguide/Western%20Cape%20Voter%20Guide.html';
   var txt='\uD83D\uDDF3\uFE0F Western Cape Voter Guide \u2014 Score parties on 10 key issues before you vote!\n'
     + '\uD83D\uDDF3\uFE0F Wes-Kaap Kiesersgids \u2014 Beoordeel partye op 10 sleutelvrae voor jy stem!\n'
     + '\uD83D\uDDF3\uFE0F Isilawuli Sabavoti WeNtshona Koloni \u2014 Nikeza amaqela amaphuzu kwimiba eyi-10 ngaphambi kokuvota!\n\n'
